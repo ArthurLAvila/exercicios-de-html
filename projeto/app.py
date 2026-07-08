@@ -2,10 +2,6 @@ from flask import Flask, render_template, request
 
 app = Flask(__name__)
 
-@app.route("/enviar", methods=["POST"])
-def enviar():
-    return render_template("sucesso.html")
-
 @app.route("/")
 def index():
     return render_template("index.html")

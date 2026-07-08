@@ -1,11 +1,42 @@
-<p></p>
-    <a href="https://www.google.com" target="_blank" rel="noopener noreferrer">
-        Acessar o Google
-    </a>
-</p>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links em HTML</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Links em HTML</h1>
+    </header>
 
-<p>
-    <a href="formulario.html">
-        Ir para a página de Formulário
-    </a>
-</p>
+    <main>
+        <section>
+            <p>
+                Esta pagina apresenta exemplos de links externos e internos.
+            </p>
+
+            <p>
+                <a href="https://www.google.com" target="_blank" rel="noopener noreferrer">
+                    Acessar o Google
+                </a>
+            </p>
+
+            <p>
+                <a href="formulario.html">
+                    Ir para a pagina de Formulario
+                </a>
+            </p>
+
+            <p>
+                <a href="index.html">Retornar a Pagina Inicial</a>
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Desenvolvido por Arthur Land Avila.</p>
+    </footer>
+</body>
+</html>

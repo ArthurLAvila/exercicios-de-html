@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+<header>
+<h1>Tabelas em HTML</h1>
+</header>
+
+<main>
+
+<section>
+
+<p>
+A tag table é utilizada para organizar informações em formato de tabela.
+</p>
+
+<p>
+<strong>
+As tags thead, tbody e tfoot organizam o cabeçalho, o corpo e o rodapé da tabela.
+</strong>
+</p>
+
+<p>
+<em>
+Uma tabela bem organizada facilita a leitura e interpretação dos dados.
+</em>
+</p>
+
+<h2>Tabela Simples</h2>
+
+<table border="1">
+
+<tr>
+    <th>Nome</th>
+    <th>Idade</th>
+</tr>
+
+<tr>
+    <td>Arthur</td>
+    <td>25</td>
+</tr>
+
+<tr>
+    <td>Maria</td>
+    <td>22</td>
+</tr>
+
+</table>
+
+<br>
+
+<h2>Tabela com thead, tbody e tfoot</h2>
+
+<table border="1">
+
+<thead>
+<tr>
+    <th>Produto</th>
+    <th>Preço</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+    <td>Notebook</td>
+    <td>R$ 3500</td>
+</tr>
+
+<tr>
+    <td>Mouse</td>
+    <td>R$ 120</td>
+</tr>
+</tbody>
+
+<tfoot>
+<tr>
+    <td>Total</td>
+    <td>R$ 3620</td>
+</tr>
+</tfoot>
+
+</table>
+
+<br>
+
+<h2>Exemplo de colspan</h2>
+
+<table border="1">
+
+<tr>
+    <th colspan="2">Cadastro</th>
+</tr>
+
+<tr>
+    <td>Nome</td>
+    <td>Arthur</td>
+</tr>
+
+</table>
+
+<br>
+
+<h2>Exemplo de rowspan</h2>
+
+<table border="1">
+
+<tr>
+    <th>Curso</th>
+    <th>Aluno</th>
+</tr>
+
+<tr>
+    <td rowspan="2">Programação</td>
+    <td>Arthur</td>
+</tr>
+
+<tr>
+    <td>Lucas</td>
+</tr>
+
+</table>
+
+<br>
+
+<a href="/">Voltar para a página inicial</a>
+
+</section>
+
+</main>
+
+<footer>
+<p>Exercício HTML</p>
+</footer>
+
+</body>
+</html>

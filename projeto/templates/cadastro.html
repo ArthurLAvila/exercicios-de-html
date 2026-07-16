@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Cadastro de Usuário</h1>
+    </header>
+
+    <main>
+
+        {% if mensagem %}
+            <p>{{ mensagem }}</p>
+        {% endif %}
+
+        <form action="/cadastro" method="POST">
+
+            <p>
+                <label for="usuario">Usuário:</label><br>
+                <input type="text" id="usuario" name="usuario" required>
+            </p>
+
+            <p>
+                <label for="email">E-mail:</label><br>
+                <input type="email" id="email" name="email" required>
+            </p>
+
+            <p>
+                <label for="senha">Senha:</label><br>
+                <input type="password" id="senha" name="senha" required>
+            </p>
+
+            <p>
+                <label for="nascimento">Data de nascimento:</label><br>
+                <input type="date" id="nascimento" name="nascimento" required>
+            </p>
+
+            <p>
+                <input type="submit" value="Cadastrar">
+            </p>
+
+        </form>
+
+        <a href="/login">Voltar para o Login</a>
+
+    </main>
+
+    <a href="/login">Voltar para o Login</a>
+
+</body>
+
+</html>

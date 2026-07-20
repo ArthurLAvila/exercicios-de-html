@@ -1,4 +1,4 @@
-/* styles.css */
+/* Reset */
 
 *{
   margin:0;
@@ -6,30 +6,50 @@
   box-sizing:border-box;
 }
 
+/* Corpo da página */
+
 body{
   font-family: Arial, sans-serif;
-  background-color:#f4f4f4;
-  margin:0;
+  background:#f4f4f4;
+  color:#333;
   padding:20px;
+  line-height:1.6;
 }
+
+/* Área principal */
+
+main{
+  max-width:1000px;
+  margin:auto;
+  background:white;
+  padding:25px;
+  border-radius:8px;
+  box-shadow:0 2px 8px rgba(0,0,0,.1);
+}
+
+/* Títulos */
 
 h1{
-  color:#333;
   text-align:center;
   margin-bottom:20px;
+  color:#222;
 }
 
-h2, h3{
-  color:#333;
-  margin-top:20px;
-  margin-bottom:10px;
+h2{
+  margin:25px 0 10px;
 }
+
+h3{
+  margin:20px 0 10px;
+}
+
+/* Parágrafos */
 
 p{
-  color:#666;
-  line-height:1.6;
   margin-bottom:15px;
 }
+
+/* Navegação */
 
 nav{
   text-align:center;
@@ -37,28 +57,69 @@ nav{
 }
 
 nav a{
-  text-decoration:none;
   color:#0066cc;
+  text-decoration:none;
+  font-weight:bold;
   margin:0 10px;
 }
 
+nav a:hover{
+  text-decoration:underline;
+}
+
+/* Listas */
+
+ul{
+  margin-left:30px;
+  margin-bottom:20px;
+}
+
+li{
+  margin-bottom:8px;
+}
+
+/* Imagens */
+
 img{
+  display:block;
   max-width:100%;
   height:auto;
-  display:block;
   margin:20px auto;
+  border-radius:8px;
 }
 
-main{
-  max-width:1000px;
-  margin:auto;
+/* Rodapé */
+
+footer{
+  text-align:center;
+  margin-top:30px;
+  padding-top:20px;
+  border-top:1px solid #ddd;
+  color:#666;
 }
 
-/* Tablets */
+/* Links */
+
+a{
+  color:#0066cc;
+}
+
+a:hover{
+  color:#004999;
+}
+
+/* ===========================
+      TABLETS
+=========================== */
+
 @media (max-width:768px){
 
   body{
       padding:15px;
+  }
+
+  main{
+      padding:20px;
   }
 
   nav a{
@@ -70,17 +131,28 @@ main{
       font-size:30px;
   }
 
+  h2{
+      font-size:26px;
+  }
+
   img{
       width:80%;
   }
 
 }
 
-/* Celulares */
+/* ===========================
+      CELULARES
+=========================== */
+
 @media (max-width:480px){
 
   body{
       padding:10px;
+  }
+
+  main{
+      padding:15px;
   }
 
   h1{
@@ -88,7 +160,7 @@ main{
   }
 
   h2{
-      font-size:20px;
+      font-size:21px;
   }
 
   h3{
@@ -97,6 +169,12 @@ main{
 
   p{
       font-size:16px;
+  }
+
+  nav a{
+      display:block;
+      margin:12px 0;
+      font-size:17px;
   }
 
   img{

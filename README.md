@@ -1,2 +1,2 @@
-# exercicios-de-html
-uma pagina simples sobre o estudante e seus aprendizados usando html
+# Flask
+5 exercicios de flask
